@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f8869de-b7fa-48e3-bab4-6f0dab9ded96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-form-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-form-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-list-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-list-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
