@@ -1,5 +1,4 @@
 package com.pjps.crud_usuarios_java.model;
-
 import java.util.Date;
 
 public class Pessoa {
@@ -91,8 +90,5 @@ public class Pessoa {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-
-    //MÉTODOS DA CLASSE
-
 
 }

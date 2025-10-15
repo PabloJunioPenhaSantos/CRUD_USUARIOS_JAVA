@@ -8,7 +8,6 @@ module com.pjps.crud_usuarios_java {
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
-    requires java.desktop;
 
     opens com.pjps.crud_usuarios_java to javafx.fxml;
     opens com.pjps.crud_usuarios_java.controller to javafx.fxml;

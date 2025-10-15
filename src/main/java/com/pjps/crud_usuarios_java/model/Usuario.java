@@ -1,23 +1,23 @@
 package com.pjps.crud_usuarios_java.model;
-
 import java.util.Date;
 
-public class Usuario extends Pessoa {
+public class Usuario extends Pessoa{
+    private int id;
     private String login;
     private String senha;
     private String email;
-    private int id ;
 
     public Usuario() {
         super();
+        this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
-        this.id = 0 ;
     }
 
     public Usuario(String nome, Date dataNasc) {
         super(nome, dataNasc);
+        this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
@@ -25,13 +25,14 @@ public class Usuario extends Pessoa {
 
     public Usuario(String nome, String sobrenome, Date dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
         super(nome, sobrenome, dataNasc, telefone, sexo, endereco);
+        this.id = 0;
         this.login = login;
         this.senha = senha;
         this.email = email;
     }
 
     public void setId(int id){
-        this.id=id;
+        this.id = id;
     }
 
     public int getId(){
@@ -61,6 +62,5 @@ public class Usuario extends Pessoa {
     public boolean isEqual(String senha){
         return senha.equals(this.senha);
     }
-
 
 }
