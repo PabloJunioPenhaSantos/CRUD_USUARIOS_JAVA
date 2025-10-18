@@ -6,6 +6,7 @@ public class Usuario extends Pessoa{
     private String login;
     private String senha;
     private String email;
+    private String idade;
 
     public Usuario() {
         super();
@@ -21,6 +22,7 @@ public class Usuario extends Pessoa{
         this.login = "";
         this.senha = "";
         this.email = "";
+        this.idade = "";
     }
 
     public Usuario(String nome, String sobrenome, Date dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
@@ -59,8 +61,10 @@ public class Usuario extends Pessoa{
         this.email = email;
     }
 
-    public boolean isEqual(String senha){
-        return senha.equals(this.senha);
+    public void setIdade() {
+        this.idade = idade;
     }
 
+
 }
+

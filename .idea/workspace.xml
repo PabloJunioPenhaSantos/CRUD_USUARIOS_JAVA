@@ -5,22 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c979eef-1e33-448a-b4b7-9c3b2a654843" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/controller/UserListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/DatabaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-form-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-form-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-list-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/pjps/crud_usuarios_java/user-list-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,21 +101,5 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pjps/crud_usuarios_java/service/UsuarioService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
