@@ -1,12 +1,11 @@
 package com.pjps.crud_usuarios_java.model;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Usuario extends Pessoa{
     private int id;
     private String login;
     private String senha;
     private String email;
-    private String idade;
 
     public Usuario() {
         super();
@@ -16,16 +15,15 @@ public class Usuario extends Pessoa{
         this.email = "";
     }
 
-    public Usuario(String nome, Date dataNasc) {
+    public Usuario(String nome, LocalDate dataNasc) {
         super(nome, dataNasc);
         this.id = 0;
         this.login = "";
         this.senha = "";
         this.email = "";
-        this.idade = "";
     }
 
-    public Usuario(String nome, String sobrenome, Date dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
+    public Usuario(String nome, String sobrenome, LocalDate dataNasc, String telefone, char sexo, String endereco, String login, String senha, String email) {
         super(nome, sobrenome, dataNasc, telefone, sexo, endereco);
         this.id = 0;
         this.login = login;
@@ -61,10 +59,8 @@ public class Usuario extends Pessoa{
         this.email = email;
     }
 
-    public void setIdade() {
-        this.idade = idade;
+    public boolean isEqual(String senha){
+        return senha.equals(this.senha);
     }
 
-
 }
-

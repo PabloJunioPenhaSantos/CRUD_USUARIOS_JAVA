@@ -4,66 +4,51 @@ import com.pjps.crud_usuarios_java.model.Usuario;
 import com.pjps.crud_usuarios_java.service.UsuarioService;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
-import javafx.scene.chart.PieChart;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.time.ZoneId;
-import java.util.Date;
-
 public class UserFormController {
 
-    @FXML
-    private Label titleLabel;
-    @FXML
-    private TextField nomeField;
-    @FXML
-    private TextField sobrenomeField;
-    @FXML
-    private TextField emailField;
-    @FXML
-    private TextField loginField;
-    @FXML
-    private TextField telefoneField;
-    @FXML
-    private DatePicker dataNascimentoPicker;
-    @FXML
-    private ChoiceBox<String> sexoChoiceBox;
-    @FXML
-    private TextField enderecoField;
+    @FXML private Label titleLabel;
+    @FXML private TextField nomeField;
+    @FXML private TextField sobrenomeField;
+    @FXML private TextField emailField;
+    @FXML private TextField loginField;
+    @FXML private DatePicker dataNascimentoPicker;
+    @FXML private TextField telefoneField;
+    @FXML private ChoiceBox<String> sexoChoiceBox;
+    @FXML private TextField enderecoField;
+
 
     private Stage stage;
     private Usuario usuario;
     private UsuarioService usuarioService;
 
-
-    public void initialize(){
+    public void initialize() {
         usuarioService = new UsuarioService();
-        sexoChoiceBox.setItems(FXCollections.observableArrayList("Masculino","Feminino"));
+        sexoChoiceBox.setItems(FXCollections.observableArrayList("Masculino", "Feminino"));
     }
 
-    public void setStage(Stage stage){
+    public void setStage(Stage stage) {
         this.stage = stage;
     }
 
-    public void setUsuario(Usuario usuario){
+    public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
-
-        if (usuario != null){
+        if (usuario != null) {
             titleLabel.setText("Editar Usuário");
             nomeField.setText(usuario.getNome());
             sobrenomeField.setText(usuario.getSobrenome());
             emailField.setText(usuario.getEmail());
             loginField.setText(usuario.getLogin());
-            if(usuario.getDataNascimento() != null){
-                dataNascimentoPicker.setValue(usuario.getDataNascimento().toInstant().atZone(ZoneId.systemDefault()).toLocalDate());
-
+            if (usuario.getDataNascimento() != null) {
+                dataNascimentoPicker.setValue(usuario.getDataNascimento());
             }
             telefoneField.setText(usuario.getTelefone());
-            sexoChoiceBox.setValue(usuario.getSexo() == 'M'?"Masculino":"Feminino");
+            sexoChoiceBox.setValue(usuario.getSexo() == 'M' ? "Masculino" : "Feminino");
             enderecoField.setText(usuario.getEndereco());
         } else {
             titleLabel.setText("Adicionar Usuário");
@@ -71,30 +56,32 @@ public class UserFormController {
     }
 
     @FXML
-    public void handleSalvar(){
+    private void handleSalvar() {
         boolean isNew = (usuario == null);
-        if(isNew){
+        if (isNew) {
             usuario = new Usuario();
         }
+
         usuario.setNome(nomeField.getText());
         usuario.setSobrenome(sobrenomeField.getText());
         usuario.setEmail(emailField.getText());
         usuario.setLogin(loginField.getText());
-        if(dataNascimentoPicker.getValue() != null){
-            usuario.setDataNascimento(Date.from(dataNascimentoPicker.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant()));
+        if (dataNascimentoPicker.getValue() != null) {
+            usuario.setDataNascimento(dataNascimentoPicker.getValue());
         }
         usuario.setTelefone(telefoneField.getText());
-        usuario.setEndereco(enderecoField.getText());
-        if(sexoChoiceBox.getValue() != null){
-            usuario.setSexo(sexoChoiceBox.getValue().equals("Masculino")?'M':'F');
+        if (sexoChoiceBox.getValue() != null) {
+            usuario.setSexo(sexoChoiceBox.getValue().equals("Masculino") ? 'M' : 'F');
         }
-        if(isNew){
-            usuarioService.adicionarUsuario(usuario);
+        usuario.setEndereco(enderecoField.getText());
 
-        }else{
+        if (isNew) {
+            usuarioService.adicionarUsuario(usuario);
+        } else {
             usuarioService.atualizarUsuario(usuario);
         }
+
+        stage.close();
+
     }
-
-
 }
